@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>   
+    </head>
+
+    <body>
+        <a-scene>
+
+            <a-assets>
+                <a-asset-item id="color doll" src="color doll .glb"  ></a-asset-item>
+                <img id="left" src="29.jpeg">
+                <img id="right" src="29.jpeg">
+                <img id="back" src="26.jpg">
+                <img id='front'src="31.jpg" >
+                <img id='front front' src="32.jpg" >
+                <img id="skylar" src="OIP.jpeg">
+              </a-assets>
+        
+
+        <!-- box -->
+        <a-box
+            position="1.000 3.392 -4.123" color="grey" scale="10 5.00 0.1"></a-box>
+            <a-box
+            position="-3.94 3.46 0.922" color="grey" scale="10 5.00 0.1" rotation="0 90 0"></a-box>
+            <a-box
+            position="1 1 1" color="grey" scale="10 10 0.1" rotation="90 0 90"></a-box>
+            <a-box
+            position="6.019 3.412 0.879" color="grey" scale="10 5.00 0.1" rotation="0 90 0">
+        </a-box>
+
+
+        <!-- background images -->
+            <a-image src="#back" position="1.068 3.309 -4.035 " rotation="0 0 0"   scale="9.778 5.123"></a-image>
+            <a-image src="#left" position="-3.852 3.309 0.928 " rotation="0 90 0"   scale="9.778 5.123"></a-image>
+            <a-image src="#right" position="5.592 3.309 1.152 " rotation="0 90 0"   scale="9.778 5.123"></a-image>
+            <a-image src="#front" position="1.010 3.555 5.868 " rotation="0 0 0"   scale="9.778 5.123"></a-image>
+            <a-image src="#front front" position="1.010 3.555 6.022 " rotation="0 0 0"   scale="9.778 5.123"></a-image>
+
+        <!--SKY-->
+
+        <a-sky src="#skylar"></a-sky>
+        <!-- doll -->
+        <a-entity position="0.507 3.9 -2.6"  gltf-model="#color doll"></a-entity>
+        </a-scene>
+    </body>
+</html>
